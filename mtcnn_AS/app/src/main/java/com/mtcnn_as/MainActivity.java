@@ -8,6 +8,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Rect;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -194,13 +195,18 @@ public class MainActivity extends Activity {
                        paint.setStrokeWidth(5);  //线的宽度
                        canvas.drawRect(left, top, right, bottom, paint);
                        //画特征点
-                       canvas.drawPoints(new float[]{faceInfo[5+14*i],faceInfo[10+14*i],
-                                                     faceInfo[6+14*i],faceInfo[11+14*i],
-                                                     faceInfo[7+14*i],faceInfo[12+14*i],
+                       canvas.drawPoints(new float[]{faceInfo[5+14*i],faceInfo[10+14*i], //left eye
+                                                     faceInfo[6+14*i],faceInfo[11+14*i], //right eye
+                                                     faceInfo[7+14*i],faceInfo[12+14*i], //nose
                                                      faceInfo[8+14*i],faceInfo[13+14*i],
                                                      faceInfo[9+14*i],faceInfo[14+14*i]}, paint);//画多个点
+
+
+                       drawHead(canvas, paint, faceInfo);
                    }
                    imageView.setImageBitmap(drawBitmap);
+
+
                 }else{
                    infoResult.setText("未检测到人脸");
                }
@@ -210,6 +216,22 @@ public class MainActivity extends Activity {
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+    }
+
+    void drawHead(Canvas canvas, Paint paint, int[] faceInfo) {
+        int top = faceInfo[2+14* 0];
+
+        int leftEyeX = faceInfo[5+14 * 0];
+        int leftEyeY = faceInfo[10+14 * 0];
+        int rightEyeX = faceInfo[6+14 * 0];
+        int rightEyeY = faceInfo[11+14 * 0];
+        int eyeCenterY = (leftEyeY + rightEyeY) / 2;
+        int eyeWidth = rightEyeX - leftEyeX;
+        int topHeight = eyeCenterY - top;
+
+        Rect rect = new Rect(leftEyeX + eyeWidth / 5,  eyeCenterY - topHeight * 4 / 5, leftEyeX + eyeWidth * 3 / 5, eyeCenterY - 3 / 10 * topHeight);
+
+        canvas.drawRect(rect, paint);
     }
 
 

@@ -1,0 +1,22 @@
+ninja: Entering directory `/home/nyiit/ncnn/mtcnn_ncnn/mtcnn_AS/app/.cxx/cmake/debug/arm64-v8a'
+[1/2] Building CXX object CMakeFiles/mtcnn.dir/src/main/cpp/mtcnn.cpp.o
+[2/2] Linking CXX shared library ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmtcnn.so
+FAILED: ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmtcnn.so 
+: && /home/nyiit/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --gcc-toolchain=/home/nyiit/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/nyiit/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot -fPIC -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fopenmp -O2 -fvisibility=hidden -fvisibility-inlines-hidden -fomit-frame-pointer -fstrict-aliasing -ffunction-sections -fdata-sections -ffast-math   -std=c++11 -frtti -fexceptions -O0 -fno-limit-debug-info  -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -shared -Wl,-soname,libmtcnn.so -o ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libmtcnn.so CMakeFiles/mtcnn.dir/src/main/cpp/mtcnn.cpp.o CMakeFiles/mtcnn.dir/src/main/cpp/mtcnn_jni.cpp.o  ../../../../src/main/jniLibs/arm64-v8a/libncnn.a -ljnigraphics -lz /home/nyiit/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21/liblog.so -latomic -lm && :
+../../../../src/main/jniLibs/arm64-v8a/libncnn.a(net.cpp.o): In function `ncnn::Net::load_param(AAssetManager*, char const*)':
+net.cpp:(.text._ZN4ncnn3Net10load_paramEP13AAssetManagerPKc+0x34): undefined reference to `AAssetManager_open'
+net.cpp:(.text._ZN4ncnn3Net10load_paramEP13AAssetManagerPKc+0x68): undefined reference to `AAsset_close'
+../../../../src/main/jniLibs/arm64-v8a/libncnn.a(net.cpp.o): In function `ncnn::Net::load_param_bin(AAssetManager*, char const*)':
+net.cpp:(.text._ZN4ncnn3Net14load_param_binEP13AAssetManagerPKc+0x34): undefined reference to `AAssetManager_open'
+net.cpp:(.text._ZN4ncnn3Net14load_param_binEP13AAssetManagerPKc+0x68): undefined reference to `AAsset_close'
+../../../../src/main/jniLibs/arm64-v8a/libncnn.a(net.cpp.o): In function `ncnn::Net::load_model(AAssetManager*, char const*)':
+net.cpp:(.text._ZN4ncnn3Net10load_modelEP13AAssetManagerPKc+0x34): undefined reference to `AAssetManager_open'
+net.cpp:(.text._ZN4ncnn3Net10load_modelEP13AAssetManagerPKc+0x68): undefined reference to `AAsset_close'
+../../../../src/main/jniLibs/arm64-v8a/libncnn.a(datareader.cpp.o): In function `ncnn::DataReaderFromAndroidAsset::scan(char const*, void*) const':
+datareader.cpp:(.text._ZNK4ncnn26DataReaderFromAndroidAsset4scanEPKcPv+0x44): undefined reference to `AAsset_seek'
+datareader.cpp:(.text._ZNK4ncnn26DataReaderFromAndroidAsset4scanEPKcPv+0x54): undefined reference to `AAsset_getBuffer'
+datareader.cpp:(.text._ZNK4ncnn26DataReaderFromAndroidAsset4scanEPKcPv+0xd0): undefined reference to `AAsset_seek'
+../../../../src/main/jniLibs/arm64-v8a/libncnn.a(datareader.cpp.o): In function `ncnn::DataReaderFromAndroidAsset::read(void*, unsigned long) const':
+datareader.cpp:(.text._ZNK4ncnn26DataReaderFromAndroidAsset4readEPvm+0x14): undefined reference to `AAsset_read'
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.

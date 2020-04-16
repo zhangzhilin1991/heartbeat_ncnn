@@ -1,0 +1,2 @@
+ninja: Entering directory `/home/nyiit/ncnn/mtcnn_ncnn/mtcnn_AS/app/.cxx/cmake/debug/armeabi-v7a'
+ninja: no work to do.

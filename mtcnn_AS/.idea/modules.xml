@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/mtcnn_AS.iml" filepath="$PROJECT_DIR$/mtcnn_AS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/mtcnn_AS-app.iml" filepath="$PROJECT_DIR$/app/mtcnn_AS-app.iml" group="mtcnn_AS/app" />
+      <module fileurl="file://$PROJECT_DIR$/mtcnn_ncnn-mtcnn_AS.iml" filepath="$PROJECT_DIR$/mtcnn_ncnn-mtcnn_AS.iml" group="mtcnn_AS" />
     </modules>
   </component>
 </project>
