@@ -1,7 +1,0 @@
-Executable : /home/nyiit/Android/Sdk/cmake/3.10.2.4988404/bin/ninja
-arguments : 
--C
-/home/nyiit/ncnn/mtcnn_ncnn/mtcnn_AS/app/.cxx/cmake/debug/arm64-v8a
-mtcnn
-jvmArgs : 
-

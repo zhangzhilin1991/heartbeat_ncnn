@@ -1,3 +1,0 @@
-/home/nyiit/ncnn/mtcnn_ncnn/mtcnn_AS/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir
-/home/nyiit/ncnn/mtcnn_ncnn/mtcnn_AS/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
-/home/nyiit/ncnn/mtcnn_ncnn/mtcnn_AS/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/mtcnn.dir

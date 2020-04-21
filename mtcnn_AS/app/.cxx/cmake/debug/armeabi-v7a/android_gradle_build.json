@@ -1,10 +1,11 @@
 {
   "stringTable": {
     "0": "/home/nyiit/ncnn/mtcnn_ncnn/mtcnn_AS/app/.cxx/cmake/debug/armeabi-v7a",
-    "1": "--target=armv7-none-linux-androideabi --gcc-toolchain=/home/nyiit/Android/Sdk/ndk/android-ndk-r16b/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64 --sysroot=/home/nyiit/Android/Sdk/ndk/android-ndk-r16b/sysroot -Dmtcnn_EXPORTS -I../../../../src/main/cpp/include -I../../../../src/main/cpp -isystem /home/nyiit/Android/Sdk/ndk/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/nyiit/Android/Sdk/ndk/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -isystem /home/nyiit/Android/Sdk/ndk/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/include/backward -isystem /home/nyiit/Android/Sdk/ndk/android-ndk-r16b/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=17 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -fopenmp -O2 -fvisibility=hidden -fvisibility-inlines-hidden -fomit-frame-pointer -fstrict-aliasing -ffunction-sections -fdata-sections -ffast-math -std=c++11 -frtti -fexceptions -O0 -fno-limit-debug-info -fPIC"
+    "1": "--target=armv7-none-linux-androideabi17 --gcc-toolchain=/home/nyiit/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/nyiit/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dmtcnn_EXPORTS -I../../../../src/main/cpp/include -I../../../../src/main/cpp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -fopenmp -static-openmp -O2 -fvisibility=hidden -fvisibility-inlines-hidden -fomit-frame-pointer -fstrict-aliasing -ffunction-sections -fdata-sections -ffast-math -std=c++11 -frtti -fexceptions -O0 -fno-limit-debug-info -fPIC"
   },
   "buildFiles": [
-    "/home/nyiit/Android/Sdk/ndk/android-ndk-r16b/build/cmake/android.toolchain.cmake",
+    "/home/nyiit/Android/Sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake",
+    "/home/nyiit/Android/Sdk/ndk/21.0.6113669/build/cmake/platforms.cmake",
     "/home/nyiit/ncnn/mtcnn_ncnn/mtcnn_AS/app/CMakeLists.txt"
   ],
   "cleanCommands": [
@@ -15,7 +16,7 @@
     "mtcnn-Debug-armeabi-v7a": {
       "buildCommand": "/home/nyiit/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/nyiit/ncnn/mtcnn_ncnn/mtcnn_AS/app/.cxx/cmake/debug/armeabi-v7a\" mtcnn",
       "buildType": "debug",
-      "toolchain": "413942909",
+      "toolchain": "3596985679",
       "abi": "armeabi-v7a",
       "artifactName": "mtcnn",
       "files": [
@@ -40,8 +41,8 @@
     }
   },
   "toolchains": {
-    "413942909": {
-      "cppCompilerExecutable": "/home/nyiit/Android/Sdk/ndk/android-ndk-r16b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+    "3596985679": {
+      "cppCompilerExecutable": "/home/nyiit/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
     }
   },
   "cFileExtensions": [],

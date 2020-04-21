@@ -1,5 +1,5 @@
 {
-  "ndkFolder": "/home/nyiit/Android/Sdk/ndk/android-ndk-r16b",
+  "ndkFolder": "/home/nyiit/Android/Sdk/ndk/21.0.6113669",
   "messages": [
     {
       "level": "INFO",
@@ -7,7 +7,7 @@
     },
     {
       "level": "INFO",
-      "message": "ndk.dir in local.properties is /home/nyiit/Android/Sdk/ndk/android-ndk-r16b"
+      "message": "ndk.dir in local.properties is /home/nyiit/Android/Sdk/ndk/21.0.6113669"
     },
     {
       "level": "INFO",
@@ -19,7 +19,7 @@
     },
     {
       "level": "INFO",
-      "message": "Considering /home/nyiit/Android/Sdk/ndk/android-ndk-r16b by ndk.dir"
+      "message": "Considering /home/nyiit/Android/Sdk/ndk/21.0.6113669 by ndk.dir"
     },
     {
       "level": "INFO",
@@ -43,7 +43,7 @@
     },
     {
       "level": "INFO",
-      "message": "Found requested ndk.dir (/home/nyiit/Android/Sdk/ndk/android-ndk-r16b) which has version 16.1.4479499"
+      "message": "Found requested ndk.dir (/home/nyiit/Android/Sdk/ndk/21.0.6113669) which has version 21.0.6113669"
     }
   ]
 }

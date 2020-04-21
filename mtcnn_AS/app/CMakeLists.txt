@@ -23,6 +23,7 @@ add_library(mtcnn SHARED ${MTCNN_COMPILE_CODE})
 find_library(  log-lib log )
 target_link_libraries(  mtcnn
                        libncnn
+                       android
                        jnigraphics
                        z
                        ${log-lib} )

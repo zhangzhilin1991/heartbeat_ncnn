@@ -1,6 +1,7 @@
 {
   "buildFiles": [
-    "/home/nyiit/Android/Sdk/ndk/android-ndk-r16b/build/cmake/android.toolchain.cmake",
+    "/home/nyiit/Android/Sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake",
+    "/home/nyiit/Android/Sdk/ndk/21.0.6113669/build/cmake/platforms.cmake",
     "/home/nyiit/ncnn/mtcnn_ncnn/mtcnn_AS/app/CMakeLists.txt"
   ],
   "cleanCommands": [
